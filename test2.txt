@@ -8,7 +8,7 @@
     <style>
         h1.h1{
             background-color: #b6d7a8ff;
-            font-size: 36px;
+            font-size: 40px;
             color: #265654;
         }
         div.div1{
@@ -52,8 +52,8 @@
 
     <div class="div2">
     <script> //判斷式
-        var cal = 1600
-        document.write('你一共吃了'+cal+'卡路里喔!</br>')
+        var cal = 880
+        document.write('你實際吃了'+cal+'卡路里喔!</br>')
     // 第一個介面猜測的卡路里數
     function eat(food){
     document.write('</br> 唉呀~'+food)
@@ -65,7 +65,7 @@
     eat('你好像有點吃太多囉!')
     //飽足程度小於等於 1000 且大於 500時，呼叫帶入'你好像吃得太多囉'作為參數的 eat 函式
     } else{
-    document.write('恭喜你吃剛剛好喔!')
+    document.write('</br>恭喜你吃剛剛好喔!')
     }
     </script>
     </div>
