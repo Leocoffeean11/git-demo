@@ -41,6 +41,7 @@
 
 </head>
 <body>
+    <body bgcolor="#D9F7EA"></body>
     <div style="text-align:center;width:1250px;height:60px;"><h1 class="h1">公布結果!</br>你實際吃了多少卡路里呢?</h1></div>
     <div class="div1">
         <p class="para1">營養小知識:</p>
@@ -52,7 +53,7 @@
 
     <div class="div2">
     <script> //判斷式
-        var cal = 880
+        var cal = 600
         document.write('你實際吃了'+cal+'卡路里喔!</br>')
     // 第一個介面猜測的卡路里數
     function eat(food){
