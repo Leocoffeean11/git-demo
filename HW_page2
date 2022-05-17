@@ -13,7 +13,7 @@
         </div>
         <div style="background-color:#e9edc9ff;"">
             <img src="imgbin_food-symbol-health-png.png" style="float: center;" alt="blue highway" height="89.5" width="115.25">
-            <input type ="button" onclick="javascript:location.href='http://www.google.com'" value="確定我的卡路里"></input>
+            <button type="button" onclick="javascript:location.href='http://www.google.com'"style="border-radius:10px;width:146.5px;height:43.75px; dashed;background-color:#d4a373ff;color:white;font-size:20px;">確定我的卡路里</button>
         </div>
         </body>
 </html>
