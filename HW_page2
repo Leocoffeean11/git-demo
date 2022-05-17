@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>align="center"猜猜你的卡路里！你的餐盒共有多少大卡呢？</title>
+        <div style="height:100%;width:100%;background-color: #e9edc9ff;"> <!--網頁寬度設定-->
+        <style type = "text/css"> 
+
+        .number{
+            font-family: Microsoft JhengHei;
+            position:relative;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin: auto;
+        }
+        .button{
+            font-family: Microsoft JhengHei;
+            position:relative;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin: auto;  
+        }
+           </style>
+
+
+
     </head>
     <body>
+        <body style="background-color:#e9edc9ff;">
         <h1 align="center">
             <span style="color:#265654; background-color:#ccd5aeff ">猜猜你的卡路里！你的餐盒共有多少大卡呢？</span></h1>
-        <div style="background-color:#e9edc9ff; font-size: 100px;">
-            <img src="unnamed.png" style="float: right;" alt="blue highway" height="229.25" width="230.25">
+
+        <div class="number" ;style="background-color:#e9edc9ff; font-size: 100px;">
+            <img src=https://i.imgur.com/BX6qs4k.png" style="float: right;" alt="blue highway" height="343.875" width="345.375">
             <p align="center"></p>
-            <input type="輸入數字" style="font-size:80px" value="輸入數字">
+            <input type="輸入數字" style="font-size:50px" value="輸入數字">
         </div>
-        <div style="background-color:#e9edc9ff;"">
-            <img src="imgbin_food-symbol-health-png.png" style="float: center;" alt="blue highway" height="89.5" width="115.25">
-            <button type="button" onclick="javascript:location.href='http://www.google.com'"style="border-radius:10px;width:146.5px;height:43.75px; dashed;background-color:#d4a373ff;color:white;font-size:20px;">確定我的卡路里</button>
+                   
+
+        <div class="button" ;style="background-color:#e9edc9ff;"">
+            <img src="https://i.imgur.com/0D19Szj.png" style="float: center;" alt="blue highway" height="89.5" width="115.25">
+            <button type="button" onclick="javascript:location.href='http://www.google.com'"style="border-radius:10px;width:250px;height:80px; dashed;background-color:#d4a373ff;color:white;font-size:25px;">確定我的卡路里</button>
         </div>
         </body>
 </html>
