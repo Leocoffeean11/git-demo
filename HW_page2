@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>align="center"猜猜你的卡路里！你的餐盒共有多少大卡呢？</title>
+    </head>
+    <body>
+        <h1 align="center">
+            <span style="color:#265654; background-color:#ccd5aeff ">猜猜你的卡路里！你的餐盒共有多少大卡呢？</span></h1>
+        <div style="background-color:#e9edc9ff; font-size: 100px;">
+            <img src="unnamed.png" style="float: right;" alt="blue highway" height="229.25" width="230.25">
+            <p align="center"></p>
+            <input type="輸入數字" style="font-size:80px" value="輸入數字">
+        </div>
+        <div style="background-color:#e9edc9ff;"">
+            <img src="imgbin_food-symbol-health-png.png" style="float: center;" alt="blue highway" height="89.5" width="115.25">
+            <input type ="button" onclick="javascript:location.href='http://www.google.com'" value="確定我的卡路里"></input>
+        </div>
+        </body>
+</html>
