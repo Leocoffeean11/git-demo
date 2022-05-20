@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>推薦餐點</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+            body{
+                font-family: Microsoft JhengHei;
+                background-color: #e9edc9ff;
+                
+            }
+
+            .wrap{
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+            .h1{
+                background-color: #b6d7a8ff;
+                font-size: 40px;
+                color: #265654;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .h2{
+                
+                font-size: 40px;
+                color: #265654;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .imgsize{
+                width: 260px;
+                height: 260px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto; 
+            }
+          
+     </style>
+
+ </head>
+ <body>
+        <div style="text-align:center;"><h1 class="h1">推薦您有可能會喜歡...</h1></div> 
+        <div style="text-align:center;"><h2 class="h2">簡單健康餐</h2>
+            <img src="img/01.png" alt="簡單健康餐" class="imgsize"></div>
+            <script> //判斷式
+                var cal = 600
+            
+            // 第一個介面猜測的卡路里數
+            function lunchbox(food){
+            }
+            if (cal<=500){
+            lunchbox('簡單健康餐');
+            //卡路里數小於等於 500 時，呼叫帶入'簡單健康餐'作為參數的 lunchbox 函式
+            } else if (cal<=800 && cal>500){
+            lunchbox('標準健康餐')
+            //飽足程度小於等於 1000 且大於 500時，呼叫帶入'標準健康餐'作為參數的 lunchbox 函式
+            } else{
+            document.write('</br>豐盛健康餐')
+            }
+            </script>
+            <a  href="https://tw.yahoo.com/" target="_blank" title="再次測驗">
+                <div align="center" style="margin-left: auto;
+                margin-right: auto;width: 150px;height: 50px; border-radius: 10px; background-color: rgb(206,160,114);text-align:center;">
+                    <button type="button" style="border-radius:10px;width:200px;height:80px;background-color:#ffab40;color:white;font-size:20px;">再次測驗</button>
+                </div>
+            </a>
+ </body>
+ </html>
