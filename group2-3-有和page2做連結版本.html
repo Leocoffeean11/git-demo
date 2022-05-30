@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二組-3</title>
+    <style>
+        h1.h1{
+            background-color: #b6d7a8ff;
+            font-size: 40px;
+            color: #265654;
+            top: 500px;
+        }
+        div.div1{
+            font-size: 24px;
+            width: 950px;
+            height:270px;
+            background-image: url("https://upload.cc/i1/2022/05/17/qbDvfF.png");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            position:relative;
+            top:50px;
+            left:100px;
+        }
+        p.para1{
+            font-family: Microsoft JhengHei;
+            position:relative;
+            top:15px;
+            left:100px;
+        }
+        div.div2{
+            font-size: 36px;
+            position:relative;
+            float: right;
+            top: -150px;
+            right: 80px;
+        }
+        div.div3{
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    <body bgcolor="#e9edc9"></body>
+    <div style="text-align:center;width:1250px;height:60px;"><h1 class="h1">公布結果!</br>你實際吃了多少卡路里呢?</h1></div>
+    <div class="div1">
+        <p class="para1">營養小知識:</p>
+        <p class="para1">正常人標準一天攝取的cal</p>
+        <p class="para1">男生:2800cal (一餐 800cal)</p>
+        <p class="para1">女生:2200cal (一餐 500cal)</p>
+    </div>
+    <img src="https://upload.cc/i1/2022/05/17/d8iF9Y.png" alt="logo" width="340" height="340" style="margin: 30px 20px 25px 30px;">
+    <div class="div2">
+        <div>你猜自己吃了<span style="font-weight:700; color:blue"></span>卡路里!</div></br>
+        <script> //判斷式
+            var span = document.querySelector('span');//獲取span標簽
+           var myName = location.search.substr(1);//得到上一個頁面輸入的參數
+           var arr = myName.split('=');//利用=號分割 鍵 和 值
+           span.innerHTML = arr[1] + ''//將數據傳入span
+            var cal = 200
+            document.write('你實際吃了'+cal+'卡路里喔!</br>')
+        // 第一個介面猜測的卡路里數
+        function eat(food){
+        document.write('</br> 唉呀~'+food)
+        }
+        if (cal<=500){
+        eat('你好像有點吃太少囉!');
+        //卡路里數小於等於 500 時，呼叫帶入'你好像吃得太少囉'作為參數的 eat 函式
+        } else if (cal>=800 && cal>500){
+        eat('你好像有點吃太多囉!')
+        //飽足程度小於等於 1000 且大於 500時，呼叫帶入'你好像吃得太多囉'作為參數的 eat 函式
+        } else{
+        document.write('</br>恭喜你吃剛剛好喔!')
+        }
+        </script>
+        </div>
+        <div class="div3">
+        <img src="https://upload.cc/i1/2022/05/17/sl085q.png" alt="logo" width="705" height="500" style="margin: -690px 50px 0px 570px;">
+    </div>
+    <a href="file:///C:/Users/user/Desktop/HLM/html.css/page-4.html">
+    <div align="center" style="position:relative;text-align:center;top: -200px;float: right;left:-200px ">
+    <button type="button" style="border-radius:10px;width:200px;height:80px; dashed;background-color:#ffab40;color:white;font-size:20px;">為您推薦健康餐點</button>
+</a>
+</div>
+</body>
+</html>
