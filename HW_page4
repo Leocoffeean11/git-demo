@@ -61,7 +61,7 @@
             
            // 第一個介面猜測的卡路里數
            
-           function lunchbox(x){
+           function lunchbox(){
            }
            if (cal<=500){
            lunchbox('簡單健康餐');
