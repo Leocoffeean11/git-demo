@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>猜猜卡路里</title>
+        <style type = "text/css">
+            body{
+                font-family: Microsoft JhengHei;
+            }
+            /* .section{background-size: cover;
+
+            } */
+            .back{
+                background-size: cover;
+            }
+            .w1{
+                text-align: center;
+            }
+            .food-section{
+                width: 800px;
+                height: 300px;
+                /* margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 100px; */
+                top: 290px;
+                right: 100px;
+                left: 310px;
+                border-radius: 20px;
+                background-color:#e9edc9ff;  
+            }
+            .plate{
+                width: 700px;
+                height: 250px;
+                top: 630px;
+                left:360px;
+                right:200px;
+                border-radius: 20px;
+                background-color: rgb(252,250,231);
+            }
+            .straight-line{
+                width: 10px;
+                height: 220px;
+                top: 645px;
+                left:730px;
+                right:200px;
+                border-radius: 20px;
+                background-color: rgb(247,232,191);
+            }
+            .button{
+                width: 150px;
+                height: 50px;
+                top: 920px;
+                left:630px;
+                right:300px;
+                border-radius: 10px;
+                background-color: rgb(210, 181, 152)             
+            }
+            .button:hover{
+                transform: scale(1.2);
+            }
+            .button:active{
+                transform: scale(1);
+            }
+
+            #apple{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:80px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+
+            }
+            #banana{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:80px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+            }
+            #cabbage{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:180px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+            }
+            #mushroom{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:180px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+            }
+            #zucchini{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:280px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+            }
+            #beef{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:390px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49);
+            }          
+            #pork{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:510px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+            #crab{
+                width: 80px;
+                height: 80px;
+                top: 40px;
+                left:615px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+            #rice{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:615px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+            #noodle{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:510px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+            #bread{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:390px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+            #cake{
+                width: 80px;
+                height: 80px;
+                top: 150px;
+                left:280px;
+                right:200px;
+                border-radius: 50px;
+                background-color: rgb(192, 132, 49); 
+            }
+
+           </style>
+
+    </head>
+
+
+    <body>
+
+        <!-- <div class="section" id="site-section" style="background-color: #e9edc9ff;"> -->
+            <!-- <div style="background:url('https://github.com/Anne841204/pic/blob/main/background.png?raw=true') no-repeat ; width:100%; height:100%">猜猜卡路里<br>今天想吃什麼？</div> -->
+            <div class = "back" style="position:relative" id="section" > 
+                <img src = "https://github.com/Anne841204/pic/blob/main/background.png?raw=true" width="100%">
+                <div class="w1" style="position: absolute; top: 80px;left: 545px ;color:rgb(41, 97, 118) ;font-size:48px;">
+                    猜猜卡路里<br>今天想吃什麼？
+                </div>
+                <div class="food-section" style="position: absolute" data-role="drag-drop-container">
+                    <div id="apple" style="position:absolute" draggable="true">
+                        <img src = "https://github.com/Anne841204/pic/blob/main/apple%E6%8B%B7%E8%B2%9D.png?raw=true" style= "width:65px;height:65px;border-radius:50px;align-items:center;" >
+                    </div>
+                    <div id="banana" style="position:absolute" draggable="true">
+                        <img src = "https://github.com/Anne841204/pic/blob/main/banana.png?raw=true" style= "width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="cabbage" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/cabbage.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="mushroom" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/mushroom.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="zucchini" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/zucchini.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="beef" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/beef.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="pork" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/ribs.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="crab" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/crab.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="rice" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/rice.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="noodle" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/noodles.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="bread" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/white-bread.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                    <div id="cake" style="position:absolute" draggable="true">
+                        <img src ="https://github.com/Anne841204/pic/blob/main/carrot-cake.png?raw=true" style="width:65px;height:65px;border-radius:50px;align-items:center;">
+                    </div>
+                </div>
+
+                <div class="plate" style="position: absolute" data-role="drag-drop-container"></div>
+                <div class="straight-line" style="position: absolute;"></div>
+
+                <div class="button" id="site-button" style="position: absolute;">
+                    <a href="file:///Users/anne/Desktop/%E7%A2%A9%E4%BA%8C%E4%B8%8B/%E5%95%86%E7%94%A8%E8%A8%88%E7%AE%97%E6%A9%9F/Project/PAGE2%202.html"target="_blank">
+                    <input type="button" value="算卡去!" style="width: 150px;height: 50px; border-radius: 10px; background-color: rgb(206,160,114);font-size: 28px; color: rgb(41, 97, 118); border:none;">
+                    </a>
+                </div>
+                                            
+            </div>
+            
+        
+        <!-- </div> -->
+        
+
+        <script>
+            //drag sources
+            let dragSources = document.querySelectorAll('[draggable="true"]');
+            dragSources.forEach((dragSource) => {
+            dragSource.addEventListener('dragstart', dragStart);
+            });
+
+            function dragStart(e) {
+            e.dataTransfer.setData('food', e.target.id);
+            }
+
+            //  dropped targets
+            let dropTargets = document.querySelectorAll('[data-role="drag-drop-container"]');
+            dropTargets.forEach((dropTarget) => {
+            dropTarget.addEventListener('drop', dropped);
+            dropTarget.addEventListener('dragenter', cancelDefault);
+            dropTarget.addEventListener('dragover', cancelDefault);
+            });
+
+            function dropped(e) {
+            cancelDefault(e);
+            let id = e.dataTransfer.getData('food');
+            e.target.appendChild(document.querySelector('#' + id));
+            }
+
+            function cancelDefault(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+            }
+
+        </script>
+       
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <html> 
+<head>
+<meta charset="utf-8"/>
+<title>猜猜卡路里</title>
+<style type="text/css">
+.box {
+   width:300px;
+   background-color:#ffffff;
+   border:2px solid blue;
+   padding:10px;
+}
+</style> 
+
+</head> -->
+
+<!-- <body>
+    <script>
+    let url = "https://fchart.github.io/img/Butterfly.png";
+    fetch(url)
+      .then((response) => {
+        return response.blob();
+      })
+      .then((imageBlob) => {
+        let img = document.getElementById('result');
+        img.src = URL.createObjectURL(imageBlob);
+      })
+    </script>
+    <img id="result" class="box">
+</body>
+
+    </html> -->
+    <!-- <div class = "col-12" style="color:#805022"; font-size:24px; id="fot">
+                <center>猜猜卡路里<br>今天想吃什麼？</center>
+                </div>   -->
+
+<!-- onclick="location.href='https://www.youtube.com/watch?v=k75NylpmfcM'"('/path', '_blank'); -->
